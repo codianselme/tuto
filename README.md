@@ -5,12 +5,15 @@ Travail à base de lsquic
 
 '''
   git clone https://github.com/codianselme/tuto.git
+  
 '''
 
 ### Submodules
 
 '''
+
   git submodule update --init --recursive
+  
 '''
  or 
 '''
@@ -24,8 +27,10 @@ Travail à base de lsquic
 ## Building
 
 '''
+
   cmake .
   make
+  
 '''
 
 ### Usage
@@ -33,8 +38,8 @@ Travail à base de lsquic
 #### All options
 
 '''
-  ./server -h
-  Usage: tut [-c cert -k key] [options] IP port
+      ./server -h
+      Usage: tut [-c cert -k key] [options] IP port
   
      -c cert.file    Certificate.
      -k key.file     Key file.
@@ -46,11 +51,15 @@ Travail à base de lsquic
 ### Running the server
 
 '''
+
   ./server -c mycert-cert.pem -k mycert-key.pem ::0 12345 -p 1 -L debug -f server.log
+
 '''
 
 ### Running the client
 
 '''
+  
   ./client ::1 12345 -L debug -f client.log
+
 '''
