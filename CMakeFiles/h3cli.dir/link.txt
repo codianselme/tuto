@@ -1,0 +1,1 @@
+/usr/bin/cc  -g -O0  -g   CMakeFiles/h3cli.dir/h3cli.c.o  -o h3cli  lsquic/src/liblsquic/liblsquic.a boringssl/crypto/libcrypto.a boringssl/ssl/libssl.a -lz -lm -lrt boringssl/crypto/libcrypto.a -lpthread 

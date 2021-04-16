@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anselme/Bureau/Quic/lsquic-tutorial/boringssl/crypto_test_data.cc
+stdlib.h
+-
+string.h
+-
+algorithm
+-
+string
+-
+

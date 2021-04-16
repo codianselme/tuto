@@ -1,0 +1,20 @@
+freebsd_instance:
+    image: freebsd-12-1-release-amd64
+
+task:
+    install_script:
+        - pkg install -y cmake libevent git go
+        - git clone https://boringssl.googlesource.com/boringssl
+        - cd boringssl
+        # This is so that both GQUIC and IETF branches build.  Just picking
+        # a known good revision:
+        - git checkout 251b5169fd44345f455438312ec4e18ae07fd58c
+        - cmake .
+        - make
+        - cd -
+    script:
+        - git submodule init
+        - git submodule update
+        - cmake -DBORINGSSL_DIR=$PWD/boringssl .
+        - make
+        - make test
