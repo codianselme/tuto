@@ -6,15 +6,19 @@ Travail à base de lsquic
 ''' bash
 
  git clone https://github.com/codianselme/tuto.git
+ 
 '''
 
 ### Submodules
 
-''' bash
+""" bash
 
  git submodule update --init --recursive 
-'''
+ 
+"""
+
  or 
+ 
 '''bash
 
  git submodule add https://boringssl.googlesource.com/boringssl
