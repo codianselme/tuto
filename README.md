@@ -3,14 +3,14 @@ Travail à base de lsquic
 
 ## Clone project 
 
-'''bash
+''' bash
 
  git clone https://github.com/codianselme/tuto.git
 '''
 
 ### Submodules
 
-'''bash
+''' bash
 
  git submodule update --init --recursive 
 '''
